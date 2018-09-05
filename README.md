@@ -24,7 +24,7 @@ code.
 
 **Request: /get\_markets/\<name\>/** \
 **Attributes:** \
-**\< name \>** - the asset name \
+**\<name\>** - the asset name \
 **Response:** JSON list of the asset’s markets \
 [{ \
   „market“ : „Asset1/Asset2“, \
@@ -39,8 +39,8 @@ code.
 
     **Request:** /get\_market\_data/// \
     **Attributes:** \
-    ◦ **\< base\_asset \>** - the base asset name \
-    ◦ **\< quote\_asset \>** - the quote asset name \
+    ◦ **\<base\_asset\>** - the base asset name \
+    ◦ **\<quote\_asset\>** - the quote asset name \
     **Response:** JSON with 24hs volume and ticker data. \
     **Example:** \
     /get\_market\_data/DEEX/DEEX.PRIZM/ \
@@ -70,3 +70,4 @@ code.
 
 **Error:** If there is an error, the system responds with a 404 error
 code.
+
