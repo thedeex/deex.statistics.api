@@ -7,7 +7,7 @@ How to use
 
 The service root URL:
 
-[https://stat-api.deex.exchange:2087/api/v1/markets](https://stat-api.deex.exchange:2087/api/v1/markets)
+[https://stat-api.deex.exchange:2087](https://stat-api.deex.exchange:2087)
 
 There are three requests you could use to get the information:
 --------------------------------------------------------------
