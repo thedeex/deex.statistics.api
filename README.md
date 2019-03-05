@@ -43,29 +43,31 @@ There are three requests you could use to get the information:
     ◦ **\<quote\_asset\>** - the quote asset name \
     **Response:** JSON with 24hs volume and ticker data. \
     **Example:** \
-    https://stat-api.deex.exchange:2087/get_market_data/DEEX/BTS/ \
+    https://stat-api.deex.exchange:2087/get_market_data/BTS/DEEX/ \
     { \
-      "ticker": { \
-        "base": "DEEX", \
-        "base\_volume": "71385.4675", \
-        "highest\_bid": "2.2278165503489533", \
-        "latest": "2.2753128555176336", \
-        "lowest\_ask": "2.2753128555176336", \
-        "quote": "BTS", \
-        "quote\_volume": "31709.22701", \
-        "time": "2018-09-20T13:59:47" \
-      } \
-    }, where:
+	"ticker": { \
+	"time": "2019-03-05T21:51:06", \
+	"base": "BTS", \
+	"base_volume": "57730.842600", \
+	"latest": "0.340000", \
+	"lowest_ask": "0.365989", \
+	"max_24h_sale": "0.386000", \
+	"quote": "DEEX", \
+	"highest_bid": "0.330000", \
+	"quote_volume": "158823.525900", \
+	"min_24h_buy": "0.366000" \
+	} \
+	}, where:
 
 -   base — the base asset;
 -   base\_volume — 24hs volume of the base asset on this market;
 -   quote — the quote asset;
 -   quote\_volume — 24hs volume of the quote asset on this market;
 -   time — time when this volume was fixed;
--   highest\_bid — the highest price a buyer of an asset is willing to
-    pay for that asset;
+-   highest\_bid — the highest price a buyer of an asset is willing to pay for that asset;
 -   latest — latest price of filled order;
--   lowest\_ask — the lowest price a seller of an asset is willing to
-    accept for that asset.
+-   lowest\_ask — the lowest price a seller of an asset is willing to accept for that asset;
+-   max_24h_sale — 24H maximum sale price;
+-   min_24h_buy — 24H minimum buy price.
 
 **Error:** If there is an error, the system responds with a 404 error code.
