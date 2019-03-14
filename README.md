@@ -71,3 +71,12 @@ There are three requests you could use to get the information:
 -   min_24h_buy — 24H minimum buy price.
 
 **Error:** If there is an error, the system responds with a 404 error code.
+
+-   ### Get all markets
+
+    **Request: /get\_all\_markets/** \
+    **Response:** JSON list of markets \
+    [„last_price“:, „market“:…] \
+    **Example:** \
+    https://stat-api.deex.exchange:2087/get_all_markets/ \
+    **Error:** If there is an error, the system responds with a 404 error code.
