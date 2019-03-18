@@ -76,7 +76,25 @@ There are three requests you could use to get the information:
 
     **Request: /get\_all\_markets/** \
     **Response:** JSON list of markets \
-    [„last_price“:, „market“:…] \
+    [„last_price“: "sourceAsset": "market": "dest_volume": "source_volume": "destAsset": …] \
     **Example:** \
     https://stat-api.deex.exchange:2087/get_all_markets/ \
+    { \
+    [{ \
+    "last_price": "11507.475395", \
+    "sourceAsset": "DEEX", \
+    "market": "DEEX/DEEX.ETH", \
+    "dest_volume": "0.000000", \
+    "source_volume": "0.000000", \
+    "destAsset": "DEEX.ETH" \
+    ... \
+    } \
+    ]} \
+    where:
+-  last\_price - last price
+-  sourceAsset - base asset
+-  market - market
+-  source\_volume - volume of the base asset
+-  dest\_volume - volume of the quote asset
+-  destAsset - quote asset
     **Error:** If there is an error, the system responds with a 404 error code.
