@@ -91,10 +91,12 @@ There are three requests you could use to get the information:
     } \
     ]} \
     where:
--  last\_price - last price
--  sourceAsset - base asset
--  market - market
--  source\_volume - volume of the base asset
--  dest\_volume - volume of the quote asset
--  destAsset - quote asset
-    **Error:** If there is an error, the system responds with a 404 error code.
+    
+-  last\_price - last price;
+-  sourceAsset - base asset;
+-  market - market;
+-  source\_volume - volume of the base asset;
+-  dest\_volume - volume of the quote asset;
+-  destAsset - quote asset.
+
+**Error:** If there is an error, the system responds with a 404 error code.
